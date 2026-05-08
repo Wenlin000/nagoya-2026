@@ -21,31 +21,36 @@ const App = () => {
     {
       day: "Day 1",
       date: "2026 7/7 (二)",
-      title: "7/7 抵達名古屋 🏠",
+      title: "7/7 啟程名古屋 🏠 兩梯次集合",
       icon: <Plane className="text-blue-500" size={20} />,
-      dailyAlert: "12 人移動含大件行李，請在機場辦好小孩 IC 卡。抵達後先在第一航廈 4F 用餐，下午 14:00 後再前往名古屋車站。",
+      dailyAlert: "📢 暑假旺季人潮眾多，請務必提前抵達機場，預留安檢排隊時間！A組與B組將於民宿會合，晚上超市補給。",
       schedule: [
         { 
-          time: "09:00", 
-          event: "✈️ 桃園機場 (TPE)", 
-          desc: "虎航班機 IT 706 (09:00 AM - 12:55 PM)。",
-          transport: "建議 06:30 抵達櫃檯報到。"
+          time: "06:00", 
+          event: "📍 A 組報到 (虎航 IT 706)", 
+          desc: "【A組】虎航 09:00 起飛。\n報到建議：06:00 - 06:30 抵達桃園 T1 櫃檯。",
+          transport: "建議最晚 06:30 完成集合。"
         },
         { 
-          time: "12:55", 
-          event: "🛬 抵達中部國際機場", 
-          desc: "入境後前往第一航廈 4 樓「藍天城」用餐。",
-          transport: "機場入境後搭乘電梯至 4 樓美食街。",
-          extra: "🍴 第一航廈 4F 推薦餐廳：\n• まるは食堂 (4F)：招牌特大炸蝦。\n• 矢場とん (4F)：味噌豬排。\n• 世界の山ちゃん (4F)：夢幻雞翅。"
+          time: "08:45", 
+          event: "📍 B 組報到 (國泰 CX 530)", 
+          desc: "【B組】國泰 11:45 起飛。\n報到建議：08:45 - 09:15 抵達桃園 T2 櫃檯。",
+          transport: "國泰櫃檯人潮較多，請提早抵達。"
         },
         { 
           time: "14:15", 
-          event: "🚆 前往名古屋車站", 
-          desc: "於交通廣場 (Access Plaza) 搭乘名鐵。",
-          transport: "【名鐵 名古屋機場➔名古屋站】\n• μ-SKY 14:07 - 14:35\n• 特急 14:27 - 15:04\n• μ-SKY 14:37 - 15:05\n• 特急 14:47 - 15:24\n\n票價：\n大人 🎫 ¥1,250 (μ-SKY)\n大人 🎫 ¥890 (特急一般)"
+          event: "🚆 A 組前往名古屋市區", 
+          desc: "A 組抵達後可先於機場 第一航廈4F 用餐。",
+          transport: "【名鐵 名古屋機場 ➔ 名古屋站】\n• μ-SKY 14:07 / 特急 14:27\n票價：\n大人 🎫 ¥1,250 (μ-SKY)\n大人 🎫 ¥890 (特急一般)\n請在機場辦好小孩 IC 卡!"
         },
         { 
-          time: "15:30", 
+          time: "16:30", 
+          event: "🚆 B 組前往名古屋市區", 
+          desc: "B 組預計 15:35 抵達，直接前往民宿會合。",
+          transport: "【地下鐵-東山線(黃線)】\n名古屋站 ➔ 池下站 (往藤之丘方向)\n經過 6 站 / 約 12 分鐘\n票價：\n🎫 ¥250",
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
+        },
+       { 
           event: "🏘️ 前往民宿辦理入住", 
           desc: "『第47プロスパ』放行李休息。",
           transport: "【轉乘指引：名鐵 ➔ 地鐵】\n名鐵名古屋站下車後走中央改札口，搭電梯至 B1 依照黃色 M 指標前往地鐵東山線中改札口。\n\n【地下鐵-東山線(黃線)】\n名古屋站 ➔ 池下站 (往藤之丘方向 / 6 站 / 12 分)\n\n票價：\n🎫 ¥250",
@@ -57,16 +62,28 @@ const App = () => {
           desc: "24 小時大型超市補給。",
           transport: "從民宿步行約 8 分鐘可達。",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=MaxValu+Imaike&travelmode=walking"
+        },
+        { 
+          time: "23:10", 
+          event: "📍 C 組報到 (樂桃 MM 722)", 
+          desc: "【C組】樂桃 02:10 (7/8凌晨) 起飛。\n報到建議：23:10 抵達桃園 T1 櫃檯。",
+          transport: "半夜安檢人潮雖少，但樂桃自助報到有時需排隊。"
         }
       ]
     },
     {
       day: "Day 2",
       date: "7/8 (三)",
-      title: "7/8 海洋奇緣 🐬 榮商圈地標夜景",
+      title: "7/8 C 組加入 🐬 12人全員到齊",
       icon: <Star className="text-cyan-500" size={20} />,
-      dailyAlert: "今日傍晚行程集中在榮商圈。Oasis 21 頂層拍照效果極佳！蓬萊軒請先派人抽號碼牌。",
+      dailyAlert: "C 組清晨抵達辛苦了！今日傍晚行程集中在榮商圈。Oasis 21 頂層拍照效果極佳！",
       schedule: [
+        { 
+          time: "06:05", 
+          event: "🛬 C 組抵達名古屋", 
+          desc: "【C組】樂桃 MM 722 (06:05 降落)。",
+          transport: "預計 07:30 離開機場搭乘名鐵。\n票價：\n🎫 ¥890"
+        },
         { 
           time: "09:30", 
           event: "🐠 名古屋港水族館", 
@@ -74,7 +91,7 @@ const App = () => {
           transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 榮 (往高畑方向 / 4 站 / 7分)\n🎫 ¥210\n【地下鐵-名城線(紫線)】\n榮 ➔ 名古屋港 (往名古屋港方向 / 8 站 / 18分)\n🎫 ¥250\n出口：3 號出口電梯。",
           tickets: "大人 ¥2,030 / 小學生 ¥1,010\n(可於KLOOK/KKDAY預購)",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Nagoya+Public+Aquarium&travelmode=walking",
-          extra: "🐬 表演時間表：\n• 海豚表演: 11:00/13:00/15:30 (北館 3F)\n• 虎鯨訓練: 12:00/14:30 (北館 3F)\n• 白鯨訓練: 11:00/13:00/15:30 (北館 3F)\n• 企鵝餵食: 10:00/14:30 (北館 潮風)\n• 旋風沙丁魚: 11:00/13:00/15:30 (南館 2F)"
+          extra: "🐬 表演提醒：\n• 海豚表演: 11:00 (北館 3F)\n• 虎鯨訓練: 12:00 (北館 3F)"
         },
         { 
           time: "15:30", 
@@ -83,7 +100,7 @@ const App = () => {
           transport: "【地下鐵-名城線(紫線)】\n名古屋港 ➔ 矢場町 (往大曾根方向 / 10 站 / 22分)\n🎫 ¥270\n出口：南檢票口出來 4 號出口方向，直通地下聯絡通道往 PARCO B1。",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Pokemon+Center+Nagoya&travelmode=walking"
         },
-        { 
+{ 
           time: "17:30", 
           event: "🍱 晚餐：蓬萊軒 鰻魚飯", 
           desc: "松坂屋南館 10F。",
@@ -92,10 +109,10 @@ const App = () => {
         },
         { 
           time: "19:30", 
-          event: "🏙️ Oasis 21 & Mirai Tower", 
+          event: "🏙️ Oasis 21 展望台", 
           desc: "電視塔與水之宇宙船夜景。",
-          transport: "從松坂屋步行約 10 分鐘。",
-          tickets: "Tower：大人約 ¥1,300\nOasis 21：免費",
+          transport: "從松坂屋/榮商圈步行約 10 分鐘。",
+          tickets: "Tower：大人約 ¥1,300 / Oasis 21：免費",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Oasis+21&travelmode=walking"
         },
         { 
@@ -112,7 +129,7 @@ const App = () => {
       date: "7/9 (四)",
       title: "7/9 樂高樂園 🧱 孩子的主場",
       icon: <Zap className="text-red-500" size={20} />,
-      dailyAlert: "樂園 17 點關門。回程在名古屋站轉乘時可去成城石井再次補給。",
+      dailyAlert: "樂園 17 點關門。12 人團體較大，建議事先在 App 上確認遊樂設施排隊時間。",
       schedule: [
         { 
           time: "10:00", 
@@ -125,15 +142,15 @@ const App = () => {
         { 
           time: "17:30", 
           event: "🍕 Maker's Pier 晚餐", 
-          desc: "樂園門口餐廳區。",
+          desc: "樂園門口餐廳區，多樣化選擇。",
           transport: "步行移動。",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Maker's+Pier&travelmode=walking"
         },
         { 
-          time: "19:30", 
-          event: "🏠 返回民宿休息", 
-          desc: "整理採買戰利品。",
-          transport: "【地下鐵-青波線(藍線)】\n金城埠頭 ➔ 名古屋 (24分)\n🎫 ¥360\n【地下鐵-東山線(黃線)】\n名古屋 ➔ 池下 (往藤之丘方向 / 12分)\n🎫 ¥270",
+          time: "20:00", 
+          event: "🏠 返回民宿", 
+          desc: "結束樂高之日。",
+           transport: "【地下鐵-青波線(藍線)】\n金城埠頭 ➔ 名古屋 (24分)\n🎫 ¥360\n【地下鐵-東山線(黃線)】\n名古屋 ➔ 池下 (往藤之丘方向 / 12分)\n🎫 ¥270",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
         }
       ]
@@ -141,14 +158,14 @@ const App = () => {
     {
       day: "Day 4",
       date: "7/10 (五)",
-      title: "7/10 鈴鹿賽道樂園 🏎️",
+      title: "7/10 鈴鹿賽道 🏎️ 賽車體驗日",
       icon: <Zap className="text-orange-500" size={20} />,
-      dailyAlert: "路程最遠，今日轉乘計程車可節省體力。建議預約 3 台計程車分乘 12 人。",
+      dailyAlert: "路程最遠，建議預約 3 台計程車分乘 12 人。回程近鐵特急座位請務必提前預約。\n玩水樂園要記得帶泳衣唷!",
       schedule: [
         { 
           time: "08:30", 
           event: "🚆 出發名古屋車站", 
-          desc: "前往搭乘近鐵特急。",
+          desc: "準備搭乘近鐵特急。",
           transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 名古屋 (往高畑方向 / 6 站 / 12分)\n🎫 ¥270\n\n【轉乘指引：地鐵 ➔ 近鐵】\n地鐵下車後循紫色『近鐵線』指標，走電梯路徑約 8 分鐘抵達近鐵改札口。"
         },
         { 
@@ -159,15 +176,15 @@ const App = () => {
         },
         { 
           time: "10:20", 
-          event: "🚕 搭乘計程車往樂園", 
-          desc: "白子站出口即有排班計程車。",
-          transport: "【計程車費用預估】\n單程約 🎫 ¥2,500 - ¥3,000 / 每車\n預計車程：15 分鐘\n\n🗣️ 溝通小工具：\n• 起點：近鐵白子站 (Shiroko-eki)\n• 終點：鈴鹿賽道 (Suzuka Sākitto)",
+          event: "🚕 計程車 ➔ 鈴鹿樂園", 
+          desc: "白子站出口搭車，12人分三車。",
+          transport: "【計程車費用預估】\n🎫 ¥2,500 - ¥3,000 / 每車\n預計車程：15 分鐘\n\n🗣️ 溝通小工具：\n• 起點：近鐵白子站 (Shiroko-eki)\n• 終點：鈴鹿賽道 (Suzuka Sākitto)",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Suzuka+Circuit&travelmode=driving"
         },
         { 
           time: "19:00", 
-          event: "🏠 返回民宿休息", 
-          desc: "今日體力消耗較大。",
+          event: "🏠 返回名古屋", 
+          desc: "今日車程長，大家在車上小睡休息。",
           transport: "【近鐵特急】\n白子 ➔ 名古屋 (40分)\n🎫 ¥2,140\n【地下鐵-東山線(黃線)】\n名古屋 ➔ 池下 (往藤之丘方向 / 12分)\n🎫 ¥270",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
         }
@@ -176,19 +193,19 @@ const App = () => {
     {
       day: "Day 5",
       date: "7/11 (六)",
-      title: "7/11 名古屋城 🏯 味噌豬排與炸蝦",
+      title: "7/11 名古屋城 🏯 文化與美食",
       icon: <Utensils className="text-yellow-600" size={20} />,
-      dailyAlert: "今日強烈建議購買『週末環保券 Eco Kippu (🎫 ¥620)』，全日無限搭乘地鐵，省錢又方便！週六人潮多請注意小孩。",
+      dailyAlert: "週六建議購買『週末環保券 Eco Kippu (🎫 ¥620)』，今日地鐵無限次搭乘！",
       schedule: [
         { 
           time: "09:30", 
           event: "🏯 名古屋城", 
-          desc: "開放時間：09:00 - 16:30",
+          desc: "必看本丸御殿，金鯱橫丁逛街。開放時間：09:00 - 16:30",
           transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 榮 (往高畑方向 / 4 站 / 7分)\n🎫 ¥210\n【地下鐵-名城線(紫線)】\n榮 ➔ 名古屋城站 (往大曾根方向 / 2 站 / 5分)\n🎫 ¥210\n出口：7 號出口電梯。",
-          tickets: "大人 ¥500\n(可於KLOOK/KKDAY預購)",
+          tickets: "大人 ¥500",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Nagoya+Castle&travelmode=walking"
         },
-        { 
+{ 
           time: "12:00", 
           event: "🐷 矢場とん 味噌豬排", 
           desc: "金鯱橫丁分店。味噌醬汁濃郁。",
@@ -197,15 +214,15 @@ const App = () => {
         },
         { 
           time: "14:30", 
-          event: "🏮 大須商店街 / コンパル", 
-          desc: "必吃炸蝦三明治與藥妝購物。",
-          transport: "【地下鐵-名城線(紫線)】\n名古屋城站 ➔ 上前津站 (往金山方向 / 4 站 / 7分)\n🎫 ¥210\n出口：9 號出口電梯。",
+          event: "🏮 大須商店街", 
+          desc: "炸蝦三明治 (Konparu) 與藥妝購物。",
+         transport: "【地下鐵-名城線(紫線)】\n名古屋城站 ➔ 上前津站 (往金山方向 / 4 站 / 7分)\n🎫 ¥210\n出口：9 號出口電梯。",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Osu+Shopping+District&travelmode=walking"
-        },
+        },      
         { 
           time: "18:30", 
-          event: "🏠 返回民宿休息", 
-          desc: "最後一晚大餐補給。",
+          event: "🍱 晚餐時間", 
+          desc: "商店街附近或榮商圈聚餐。",
           transport: "【地下鐵-名城線(紫線)】\n上前津 ➔ 榮 (2 站 / 4分)\n🎫 ¥210\n【地下鐵-東山線(黃線)】\n榮 ➔ 池下 (往藤之丘方向 / 4 站 / 7分)\n🎫 ¥210",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
         }
@@ -214,30 +231,35 @@ const App = () => {
     {
       day: "Day 6",
       date: "7/12 (日)",
-      title: "7/12 鐵道模擬 🚄 蝦仙貝最後掃貨",
+      title: "7/12 賦歸 ✈️ 三梯次離境",
       icon: <ShoppingBag className="text-pink-500" size={20} />,
-      dailyAlert: "建議最晚 18:50 抵達機場辦理報到。『蝦仙貝之里』機場店 4F 營業至 21:00。最後一天行李量大請注意移動。",
+      dailyAlert: "今日三梯次離境時間不同，請務必記好自己的「機場報到時間」。行李可先寄放在名古屋車站。",
       schedule: [
         { 
           time: "10:30", 
           event: "🚄 磁浮鐵道館", 
-          desc: "火車駕駛模擬體驗。",
+          desc: "12 人最後的大團體活動。",
           transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 名古屋 (往高畑方向 / 12分)\n🎫 ¥270\n【地下鐵-青波線(藍線)】\n名古屋 ➔ 金城埠頭 (往金城埠頭 / 10 站 / 24分)\n🎫 ¥360\n出口：出站步行 2 分鐘。",
           tickets: "大人 ¥1,000 / 兒童 ¥500\n(建議官網或現場購票)",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=SCMAGLEV+and+Railway+Park&travelmode=walking"
         },
         { 
-          time: "17:30", 
-          event: "🦐 蝦仙貝之里 機場店", 
-          desc: "機場 4F 藍天城最後採買。",
-          transport: "【名鐵 μ-SKY 特急】\n名鐵名古屋 ➔ 中部國際機場 (28分)\n🎫 ¥1,250",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Ebisenbei+no+Sato+Centrair&travelmode=walking"
+          time: "13:45", 
+          event: "📍 B 組報到 (國泰 CX 531)", 
+          desc: "【B組】16:45 起飛。\n報到建議：13:45 抵達機場櫃檯。",
+          transport: "【名鐵 μ-SKY】名古屋站 ➔ 機場\n票價：\n🎫 ¥1,250"
         },
         { 
-          time: "21:20", 
-          event: "✈️ 虎航 IT 707 起飛", 
-          desc: "21:20 PM - 23:25 PM 返回台灣。",
-          transport: "帶著滿滿回憶回台。"
+          time: "16:55", 
+          event: "📍 C 組報到 (星宇 JX 839)", 
+          desc: "【C組】19:55 起飛。\n報到建議：16:55 抵達機場櫃檯。",
+          transport: "【名鐵 μ-SKY】名古屋站 ➔ 機場\n票價：\n🎫 ¥1,250"
+        },
+        { 
+          time: "18:20", 
+          event: "📍 A 組報到 (虎航 IT 707)", 
+          desc: "【A組】21:20 起飛。\n報到建議：18:20 抵達機場櫃檯。",
+          transport: "【名鐵 μ-SKY】名古屋站 ➔ 機場\n票價：\n🎫 ¥1,250"
         }
       ]
     }

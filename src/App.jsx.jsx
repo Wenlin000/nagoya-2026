@@ -50,7 +50,7 @@ const App = () => {
           transport: "【地下鐵-東山線(黃線)】\n名古屋站 ➔ 池下站 (往藤之丘方向)\n經過 6 站 / 約 12 分鐘\n票價：\n🎫 ¥250",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
         },
-       { 
+        { 
           event: "🏘️ 前往民宿辦理入住", 
           desc: "『第47プロスパ』放行李休息。",
           transport: "【轉乘指引：名鐵 ➔ 地鐵】\n名鐵名古屋站下車後走中央改札口，搭電梯至 B1 依照黃色 M 指標前往地鐵東山線中改札口。\n\n【地下鐵-東山線(黃線)】\n名古屋站 ➔ 池下站 (往藤之丘方向 / 6 站 / 12 分)\n\n票價：\n🎫 ¥250",
@@ -76,7 +76,7 @@ const App = () => {
       date: "7/8 (三)",
       title: "7/8 C 組加入 🏯 12人全員到齊",
       icon: <Star className="text-cyan-500" size={20} />,
-      dailyAlert: "C 組清晨抵達辛苦了！今日傍晚行程集中在榮商圈。Oasis 21 頂層拍照效果極佳！",
+      dailyAlert: "C 組清晨抵達辛苦了！今日傍晚行程集中在榮商圈.Oasis 21 頂層拍照效果極佳！",
       schedule: [
         { 
           time: "06:05", 
@@ -90,10 +90,12 @@ const App = () => {
           desc: "必看本丸御殿，金鯱橫丁逛街。開放時間：09:00 - 16:30",
           transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 榮 (往高畑方向 / 4 站 / 7分)\n🎫 ¥210\n【地下鐵-名城線(紫線)】\n榮 ➔ 名古屋城站 (往大曾根方向 / 2 站 / 5分)\n🎫 ¥210\n出口：7 號出口電梯。",
           tickets: "大人 ¥500",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Nagoya+Castle&travelmode=walking"
-walkLink:https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&travelmode=walking        
-},
-{ 
+          walkLinks: [
+            { label: '開啟步行導航 (前往名古屋城)', url: 'https://www.google.com/maps/dir/?api=1&destination=Nagoya+Castle&travelmode=walking' },
+            { label: '開啟步行導航 (前往名古屋城地鐵站)', url: 'https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&travelmode=walking' }
+          ]
+        },
+        { 
           time: "11:40", 
           event: "🍱 午餐：馬喰一代-飛驒牛", 
           desc: "榮站附近 BINO 5F。",
@@ -107,7 +109,7 @@ walkLink:https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&tra
           transport: "【地下鐵-名城線(紫線)】\n名古屋港 ➔ 矢場町 (往大曾根方向 / 10 站 / 22分)\n🎫 ¥270\n出口：南檢票口出來 4 號出口方向，直通地下聯絡通道往 PARCO B1。",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Pokemon+Center+Nagoya&travelmode=walking"
         },
-{ 
+        { 
           time: "17:30", 
           event: "🍱 晚餐：蓬萊軒 鰻魚飯", 
           desc: "松坂屋南館 10F。",
@@ -133,7 +135,7 @@ walkLink:https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&tra
     },
     {
       day: "Day 3",
-      date: "7/9 (四)",
+      date: "7/9 (三)",
       title: "7/9 樂高樂園 🧱 孩子的主場",
       icon: <Zap className="text-red-500" size={20} />,
       dailyAlert: "樂園 17 點關門。12 人團體較大，建議事先在 App 上確認遊樂設施排隊時間。",
@@ -157,7 +159,7 @@ walkLink:https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&tra
           time: "20:00", 
           event: "🏠 返回民宿", 
           desc: "結束樂高之日。",
-           transport: "【地下鐵-青波線(藍線)】\n金城埠頭 ➔ 名古屋 (24分)\n🎫 ¥360\n【地下鐵-東山線(黃線)】\n名古屋 ➔ 池下 (往藤之丘方向 / 12分)\n🎫 ¥270",
+          transport: "【地下鐵-青波線(藍線)】\n金城埠頭 ➔ 名古屋 (24分)\n🎫 ¥360\n【地下鐵-東山線(黃線)】\n名古屋 ➔ 池下 (往藤之丘方向 / 12分)\n🎫 ¥270",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
         }
       ]
@@ -172,13 +174,11 @@ walkLink:https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&tra
         { 
           time: "08:30", 
           event: "🚆 出發名古屋車站", 
-         },
-
+        },
         { 
           time: "17:00", 
           event: "🏠 返回民宿", 
           desc: "今日車程長，大家在車上小睡休息。",
-
         }
       ]
     },
@@ -189,7 +189,6 @@ walkLink:https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&tra
       icon: <Utensils className="text-yellow-600" size={20} />,
       dailyAlert: "週六建議購買『週末環保券 Eco Kippu (🎫 ¥620)』，今日地鐵無限次搭乘！",
       schedule: [
-
         { 
           time: "09:30", 
           event: "🐠 名古屋港水族館", 
@@ -203,7 +202,7 @@ walkLink:https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&tra
           time: "14:30", 
           event: "🏮 大須商店街", 
           desc: "炸蝦三明治 (Konparu) 與藥妝購物。",
-         transport: "【地下鐵-名城線(紫線)】\n名古屋港站 ➔ 上前津站 (往大曾根、大德寺方向 / 9 站 / 18分)\n🎫 ¥270\n出口：9 號出口電梯。",
+          transport: "【地下鐵-名城線(紫線)】\n名古屋港站 ➔ 上前津站 (往大曾根、大德寺方向 / 9 站 / 18分)\n🎫 ¥270\n出口：9 號出口電梯。",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Osu+Shopping+District&travelmode=walking"
         },      
         { 
@@ -233,19 +232,19 @@ walkLink:https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&tra
         { 
           time: "13:45", 
           event: "📍 B 組報到 (國泰 CX 531)", 
-          desc: "【B組】16:45 起飛。\n報到建議：13:45 抵達機場櫃檯。",
+          desc: "【B組】16:45 起飛。\n報到建議：13:45 批次抵達機場櫃檯。",
           transport: "【名鐵 μ-SKY】名古屋站 ➔ 機場\n票價：\n🎫 ¥1,250"
         },
         { 
           time: "16:55", 
           event: "📍 C 組報到 (星宇 JX 839)", 
-          desc: "【C組】19:55 起飛。\n報到建議：16:55 抵達機場櫃檯。",
+          desc: "【C組】19:55 起飛。\n報到建議：16:55 批次抵達機場櫃檯。",
           transport: "【名鐵 μ-SKY】名古屋站 ➔ 機場\n票價：\n🎫 ¥1,250"
         },
         { 
           time: "18:20", 
           event: "📍 A 組報到 (虎航 IT 707)", 
-          desc: "【A組】21:20 起飛。\n報到建議：18:20 抵達機場櫃檯。",
+          desc: "【A組】21:20 起飛。\n報到建議：18:20 批次抵達機場櫃檯。",
           transport: "【名鐵 μ-SKY】名古屋站 ➔ 機場\n票價：\n🎫 ¥1,250"
         }
       ]
@@ -348,7 +347,8 @@ walkLink:https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&tra
                       </div>
                     )}
 
-                    {item.walkLink && (
+                    {/* 情況 A：只有單個連結時的渲染（相容其他行程） */}
+                    {item.walkLink && !item.walkLinks && (
                       <a 
                         href={item.walkLink} 
                         target="_blank" 
@@ -358,6 +358,24 @@ walkLink:https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&tra
                         {item.event.includes('計程車') ? <Car size={14} /> : <Navigation size={14} />} 
                         {item.event.includes('計程車') ? '開啟路線參考 (Google Maps)' : '開啟步行導航 (Google Maps)'}
                       </a>
+                    )}
+
+                    {/* 情況 B：有多個連結時的渲染（專屬名古屋城這類行程） */}
+                    {item.walkLinks && (
+                      <div className="space-y-2 w-full">
+                        {item.walkLinks.map((link, linkIndex) => (
+                          <a 
+                            key={linkIndex}
+                            href={link.url} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center justify-center gap-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-xl text-xs font-bold transition-all shadow-md active:scale-95"
+                          >
+                            <Navigation size={14} />
+                            {link.label}
+                          </a>
+                        ))}
+                      </div>
                     )}
                   </div>
                 </div>

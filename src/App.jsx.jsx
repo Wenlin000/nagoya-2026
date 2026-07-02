@@ -11,8 +11,8 @@ const App = () => {
   // 外部連結與資訊
   const links = {
     subwayMap: "https://www.kotsu.city.nagoya.jp/rp/subway/routemap.html",
-    kintetsuNagoyaToShiroko: "https://transfer.navitime.biz/kintetsu/pc/diagram/TrainDiagram?stCode=00000213&rrCode=00000055&updown=1",
-    kintetsuShirokoToNagoya: "https://transfer.navitime.biz/kintetsu/pc/diagram/TrainDiagram?stCode=00000329&rrCode=00000055&updown=0",
+    meitetsuSchedule: "https://trainbus.meitetsu.co.jp/meitetsu-transfer-zh-tw/pc/",
+    meitetsuAirport: "https://www.meitetsu.co.jp/cht/airport-access/",
     address: "〒464-0848 愛知縣名古屋市千種區春岡 1-5-5",
     stayName: "第47プロスパ (池下/今池)"
   };
@@ -76,7 +76,7 @@ const App = () => {
       date: "7/8 (三)",
       title: "7/8 C 組加入 🏯 12人全員到齊",
       icon: <Star className="text-cyan-500" size={20} />,
-      dailyAlert: "C 組清晨抵達辛苦了！今日傍晚行程集中在榮商圈.Oasis 21 頂層拍照效果極佳！",
+      dailyAlert: "C 組清晨抵達辛苦了！今日傍晚行程集中在榮商圈。Oasis 21 頂層拍照效果極佳！",
       schedule: [
         { 
           time: "06:05", 
@@ -135,7 +135,7 @@ const App = () => {
     },
     {
       day: "Day 3",
-      date: "7/9 (三)",
+      date: "7/9 (四)",
       title: "7/9 樂高樂園 🧱 孩子的主場",
       icon: <Zap className="text-red-500" size={20} />,
       dailyAlert: "樂園 17 點關門。12 人團體較大，建議事先在 App 上確認遊樂設施排隊時間。",
@@ -394,12 +394,12 @@ const App = () => {
                     <span>中文版名古屋地鐵路線圖</span>
                     <ExternalLink size={14} className="text-indigo-600" />
                   </a>
-                  <a href={links.kintetsuNagoyaToShiroko} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between bg-white p-3 rounded-xl border border-slate-300 text-xs font-bold text-slate-700 hover:bg-indigo-50 transition-colors">
-                    <span>近鐵特急時刻表 (名古屋➔白子)</span>
+                  <a href={links.meitetsuSchedule} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between bg-white p-3 rounded-xl border border-slate-300 text-xs font-bold text-slate-700 hover:bg-indigo-50 transition-colors">
+                    <span>名鐵時刻表與轉乘查詢 (繁體中文)</span>
                     <ExternalLink size={14} className="text-indigo-600" />
                   </a>
-                  <a href={links.kintetsuShirokoToNagoya} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between bg-white p-3 rounded-xl border border-slate-300 text-xs font-bold text-slate-700 hover:bg-indigo-50 transition-colors">
-                    <span>近鐵特急時刻表 (白子➔名古屋)</span>
+                  <a href={links.meitetsuAirport} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between bg-white p-3 rounded-xl border border-slate-300 text-xs font-bold text-slate-700 hover:bg-indigo-50 transition-colors">
+                    <span>名鐵機場交通指南 (μ-SKY介紹)</span>
                     <ExternalLink size={14} className="text-indigo-600" />
                   </a>
                 </div>

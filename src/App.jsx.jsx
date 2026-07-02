@@ -86,12 +86,18 @@ const App = () => {
         },
         { 
           time: "09:30", 
-          event: "🐠 名古屋港水族館", 
-          desc: "營業時間：09:30 - 17:30",
-          transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 榮 (往高畑方向 / 4 站 / 7分)\n🎫 ¥210\n【地下鐵-名城線(紫線)】\n榮 ➔ 名古屋港 (往名古屋港方向 / 8 站 / 18分)\n🎫 ¥250\n出口：3 號出口電梯。",
-          tickets: "大人 ¥2,030 / 小學生 ¥1,010\n(可於KLOOK/KKDAY預購)",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Nagoya+Public+Aquarium&travelmode=walking",
-          extra: "🐬 表演提醒：\n• 海豚表演: 11:00 (北館 3F)\n• 虎鯨訓練: 12:00 (北館 3F)"
+          event: "🏯 名古屋城", 
+          desc: "必看本丸御殿，金鯱橫丁逛街。開放時間：09:00 - 16:30",
+          transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 榮 (往高畑方向 / 4 站 / 7分)\n🎫 ¥210\n【地下鐵-名城線(紫線)】\n榮 ➔ 名古屋城站 (往大曾根方向 / 2 站 / 5分)\n🎫 ¥210\n出口：7 號出口電梯。",
+          tickets: "大人 ¥500",
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Nagoya+Castle&travelmode=walking"
+        },
+{ 
+          time: "11:40", 
+          event: "🍱 午餐：馬喰一代-飛驒牛", 
+          desc: "榮站附近。",
+          transport: "【地下鐵-名城線(紫線)】\n名古屋城站➔ 榮 ",
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Atsuta+Horaiken+Matsuzakaya&travelmode=walking"
         },
         { 
           time: "15:30", 
@@ -160,33 +166,18 @@ const App = () => {
       date: "7/10 (五)",
       title: "7/10 鈴鹿賽道 🏎️ 賽車體驗日",
       icon: <Zap className="text-orange-500" size={20} />,
-      dailyAlert: "路程最遠，建議預約 3 台計程車分乘 12 人。回程近鐵特急座位請務必提前預約。\n玩水樂園要記得帶泳衣唷!",
+      dailyAlert: "路程最遠，本日包車。\n玩水樂園要記得帶泳衣唷!",
       schedule: [
         { 
           time: "08:30", 
           event: "🚆 出發名古屋車站", 
-          desc: "準備搭乘近鐵特急。",
-          transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 名古屋 (往高畑方向 / 6 站 / 12分)\n🎫 ¥270\n\n【轉乘指引：地鐵 ➔ 近鐵】\n地鐵下車後循紫色『近鐵線』指標，走電梯路徑約 8 分鐘抵達近鐵改札口。"
-        },
+         },
+
         { 
-          time: "09:30", 
-          event: "🚆 近鐵特急 (往白子站)", 
-          desc: "【近鐵特急 名古屋➔ 白子 班次表】\n• 09:00 - 09:41 / 09:10 - 09:51\n• 09:30 - 10:11 / 09:50 - 10:31",
-          transport: "票價：\n大人 🎫 ¥2,140 (含指定席券)\n請提前在官網預約 12 人座席。"
-        },
-        { 
-          time: "10:20", 
-          event: "🚕 計程車 ➔ 鈴鹿樂園", 
-          desc: "白子站出口搭車，12人分三車。",
-          transport: "【計程車費用預估】\n🎫 ¥2,500 - ¥3,000 / 每車\n預計車程：15 分鐘\n\n🗣️ 溝通小工具：\n• 起點：近鐵白子站 (Shiroko-eki)\n• 終點：鈴鹿賽道 (Suzuka Sākitto)",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Suzuka+Circuit&travelmode=driving"
-        },
-        { 
-          time: "19:00", 
-          event: "🏠 返回名古屋", 
+          time: "17:00", 
+          event: "🏠 返回民宿", 
           desc: "今日車程長，大家在車上小睡休息。",
-          transport: "【近鐵特急】\n白子 ➔ 名古屋 (40分)\n🎫 ¥2,140\n【地下鐵-東山線(黃線)】\n名古屋 ➔ 池下 (往藤之丘方向 / 12分)\n🎫 ¥270",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
+
         }
       ]
     },
@@ -197,20 +188,15 @@ const App = () => {
       icon: <Utensils className="text-yellow-600" size={20} />,
       dailyAlert: "週六建議購買『週末環保券 Eco Kippu (🎫 ¥620)』，今日地鐵無限次搭乘！",
       schedule: [
+
         { 
           time: "09:30", 
-          event: "🏯 名古屋城", 
-          desc: "必看本丸御殿，金鯱橫丁逛街。開放時間：09:00 - 16:30",
-          transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 榮 (往高畑方向 / 4 站 / 7分)\n🎫 ¥210\n【地下鐵-名城線(紫線)】\n榮 ➔ 名古屋城站 (往大曾根方向 / 2 站 / 5分)\n🎫 ¥210\n出口：7 號出口電梯。",
-          tickets: "大人 ¥500",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Nagoya+Castle&travelmode=walking"
-        },
-{ 
-          time: "12:00", 
-          event: "🐷 矢場とん 味噌豬排", 
-          desc: "金鯱橫丁分店。味噌醬汁濃郁。",
-          transport: "步行移動。",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Yabatun+Kinshachi+Yokocho&travelmode=walking"
+          event: "🐠 名古屋港水族館", 
+          desc: "營業時間：09:30 - 17:30",
+          transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 榮 (往高畑方向 / 4 站 / 7分)\n🎫 ¥210\n【地下鐵-名城線(紫線)】\n榮 ➔ 名古屋港 (往名古屋港方向 / 8 站 / 18分)\n🎫 ¥250\n出口：3 號出口電梯。",
+          tickets: "大人 ¥2,030 / 小學生 ¥1,010\n(可於KLOOK/KKDAY預購)",
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Nagoya+Public+Aquarium&travelmode=walking",
+          extra: "🐬 表演提醒：\n• 海豚表演: 11:00 (北館 3F)\n• 虎鯨訓練: 12:00 (北館 3F)"
         },
         { 
           time: "14:30", 

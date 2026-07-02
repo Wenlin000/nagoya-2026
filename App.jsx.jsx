@@ -74,7 +74,7 @@ const App = () => {
     {
       day: "Day 2",
       date: "7/8 (三)",
-      title: "7/8 C 組加入 🐬 12人全員到齊",
+      title: "7/8 C 組加入 🏯 12人全員到齊",
       icon: <Star className="text-cyan-500" size={20} />,
       dailyAlert: "C 組清晨抵達辛苦了！今日傍晚行程集中在榮商圈。Oasis 21 頂層拍照效果極佳！",
       schedule: [
@@ -91,13 +91,14 @@ const App = () => {
           transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 榮 (往高畑方向 / 4 站 / 7分)\n🎫 ¥210\n【地下鐵-名城線(紫線)】\n榮 ➔ 名古屋城站 (往大曾根方向 / 2 站 / 5分)\n🎫 ¥210\n出口：7 號出口電梯。",
           tickets: "大人 ¥500",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Nagoya+Castle&travelmode=walking"
-        },
+walkLink:https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&travelmode=walking        
+},
 { 
           time: "11:40", 
           event: "🍱 午餐：馬喰一代-飛驒牛", 
-          desc: "榮站附近。",
-          transport: "【地下鐵-名城線(紫線)】\n名古屋城站➔ 榮 ",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Atsuta+Horaiken+Matsuzakaya&travelmode=walking"
+          desc: "榮站附近 BINO 5F。",
+          transport: "【地下鐵-名城線(紫線)】\n名古屋城 ➔ 榮 (往金山、新瑞橋方向 / 2 站 / 4分)\n🎫 ¥210 \n建議出口：サカエチカ（Sakaechika）地下街 10 號出口",
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Hida+Gyu+Ittouya+Bakuroichidai+Nagoya+Sakae&travelmode=walking"
         },
         { 
           time: "15:30", 
@@ -184,7 +185,7 @@ const App = () => {
     {
       day: "Day 5",
       date: "7/11 (六)",
-      title: "7/11 名古屋城 🏯 文化與美食",
+      title: "7/11 名古屋水族館 🐬與美食",
       icon: <Utensils className="text-yellow-600" size={20} />,
       dailyAlert: "週六建議購買『週末環保券 Eco Kippu (🎫 ¥620)』，今日地鐵無限次搭乘！",
       schedule: [
@@ -202,7 +203,7 @@ const App = () => {
           time: "14:30", 
           event: "🏮 大須商店街", 
           desc: "炸蝦三明治 (Konparu) 與藥妝購物。",
-         transport: "【地下鐵-名城線(紫線)】\n名古屋城站 ➔ 上前津站 (往金山方向 / 4 站 / 7分)\n🎫 ¥210\n出口：9 號出口電梯。",
+         transport: "【地下鐵-名城線(紫線)】\n名古屋港站 ➔ 上前津站 (往大曾根、大德寺方向 / 9 站 / 18分)\n🎫 ¥270\n出口：9 號出口電梯。",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Osu+Shopping+District&travelmode=walking"
         },      
         { 

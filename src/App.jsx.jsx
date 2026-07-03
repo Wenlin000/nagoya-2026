@@ -48,20 +48,23 @@ const App = () => {
           event: "🚆 B 組前往名古屋市區", 
           desc: "B 組預計 15:35 抵達，直接前往民宿會合。",
           transport: "【地下鐵-東山線(黃線)】\n名古屋站 ➔ 池下站 (往藤之丘方向)\n經過 6 站 / 約 12 分鐘\n票價：\n🎫 ¥250",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking",
+          walkLabel: "導航至 民宿 (第47プロスパ)"
         },
         { 
           event: "🏘️ 前往民宿辦理入住", 
           desc: "『第47プロスパ』放行李休息。",
           transport: "【轉乘指引：名鐵 ➔ 地鐵】\n名鐵名古屋站下車後走中央改札口，搭電梯至 B1 依照黃色 M 指標前往地鐵東山線中改札口。\n\n【地下鐵-東山線(黃線)】\n名古屋站 ➔ 池下站 (往藤之丘方向 / 6 站 / 12 分)\n\n票價：\n🎫 ¥250",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking",
+          walkLabel: "導航至 民宿 (第47プロスパ)"
         },
         { 
           time: "18:00", 
           event: "🛒 MaxValu 今池店", 
           desc: "24 小時大型超市補給。",
           transport: "從民宿步行約 8 分鐘可達。",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=MaxValu+Imaike&travelmode=walking"
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=MaxValu+Imaike&travelmode=walking",
+          walkLabel: "導航至 MaxValu 今池店"
         },
         { 
           time: "23:10", 
@@ -76,7 +79,7 @@ const App = () => {
       date: "7/8 (三)",
       title: "7/8 C 組加入 🏯 12人全員到齊",
       icon: <Star className="text-cyan-500" size={20} />,
-      dailyAlert: "C 組清晨抵達辛苦了！今日傍晚行程集中在榮商圈。Oasis 21 頂層拍照效果極佳！",
+      dailyAlert: "下午為彈性購物與放電時間！PARCO 西館 6 樓的扭蛋區可以作為小朋友乖乖陪逛街的最佳獎勵誘因唷！",
       schedule: [
         { 
           time: "06:05", 
@@ -91,8 +94,8 @@ const App = () => {
           transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 榮 (往高畑方向 / 4 站 / 7分)\n🎫 ¥210\n【地下鐵-名城線(紫線)】\n榮 ➔ 名古屋城站 (往大曾根方向 / 2 站 / 5分)\n🎫 ¥210\n出口：7 號出口電梯。",
           tickets: "大人 ¥500",
           walkLinks: [
-            { label: '開啟步行導航 (前往名古屋城)', url: 'https://www.google.com/maps/dir/?api=1&destination=Nagoya+Castle&travelmode=walking' },
-            { label: '開啟步行導航 (前往名古屋城地鐵站)', url: 'https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&travelmode=walking' }
+            { label: '導航至 名古屋城', url: 'https://www.google.com/maps/dir/?api=1&destination=Nagoya+Castle&travelmode=walking' },
+            { label: '導航至 名古屋城地鐵站', url: 'https://www.google.com/maps/dir/?api=1&destination=Nagoyajo+Station&travelmode=walking' }
           ]
         },
         { 
@@ -100,36 +103,53 @@ const App = () => {
           event: "🍱 午餐：馬喰一代-飛驒牛", 
           desc: "榮站附近 BINO 5F。",
           transport: "【地下鐵-名城線(紫線)】\n名古屋城 ➔ 榮 (往金山、新瑞橋方向 / 2 站 / 4分)\n🎫 ¥210 \n建議出口：サカエチカ（Sakaechika）地下街 10 號出口",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Hida+Gyu+Ittouya+Bakuroichidai+Nagoya+Sakae&travelmode=walking"
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Hida+Gyu+Ittouya+Bakuroichidai+Nagoya+Sakae&travelmode=walking",
+          walkLabel: "導航至 馬喰一代 (BINO 5F)"
         },
         { 
-          time: "15:30", 
-          event: "⚡ 寶可夢中心 Nagoya", 
-          desc: "名古屋 PARCO 東館 2F。",
-          transport: "【地下鐵-名城線(紫線)】\n名古屋港 ➔ 矢場町 (往大曾根方向 / 10 站 / 22分)\n🎫 ¥270\n出口：南檢票口出來 4 號出口方向，直通地下聯絡通道往 PARCO B1。",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Pokemon+Center+Nagoya&travelmode=walking"
+          time: "下午", 
+          event: "🛍️ 家電採買：Yodobashi", 
+          desc: "從 BINO 步行出發，買吹風機等電器。",
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Yodobashi+Camera+Multimedia+Nagoya+Matsuzakaya+Store&travelmode=walking",
+          walkLabel: "導航至 Yodobashi"
         },
         { 
-          time: "17:30", 
-          event: "🍱 晚餐：蓬萊軒 鰻魚飯", 
-          desc: "松坂屋南館 10F。",
-          transport: "PARCO 與松坂屋有連通道，步行約 3-5 分鐘。",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Atsuta+Horaiken+Matsuzakaya&travelmode=walking"
+          time: "順路", 
+          event: "👟 鞋款購物：HOKA", 
+          desc: "中日大樓 (Chunichi Building) 內朝聖與採買。",
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Chunichi+Building+Nagoya&travelmode=walking",
+          walkLabel: "導航至 中日大樓 (HOKA)"
         },
         { 
-          time: "19:30", 
-          event: "🏙️ Oasis 21 展望台", 
-          desc: "電視塔與水之宇宙船夜景。",
-          transport: "從松坂屋/榮商圈步行約 10 分鐘。",
-          tickets: "Tower：大人約 ¥1,300 / Oasis 21：免費",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Oasis+21&travelmode=walking"
+          time: "順路", 
+          event: "🏞️ 放電：綠洲21 & 久屋大通公園", 
+          desc: "【綠洲21】頂樓水之宇宙船風景極佳，地下銀河廣場周邊有吉卜力共和國。\n【久屋大通公園】大草皮與水景噴泉，適合小朋友盡情跑跳放電！",
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Oasis+21&travelmode=walking",
+          walkLabel: "導航至 綠洲21"
         },
         { 
-          time: "21:15", 
-          event: "🏠 返回民宿休息", 
-          desc: "從榮站直接搭車回民宿。",
-          transport: "【地下鐵-東山線(黃線)】\n榮 ➔ 池下 (往藤之丘方向 / 4 站 / 7分)\n🎫 ¥210",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
+          time: "順路", 
+          event: "🍰 下午茶與休息", 
+          desc: "逛累了的最佳法寶 (兩家都在動線上)：\n• HARBS 榮本店 (近綠洲21)：招牌水果千層蛋糕，有不含咖啡因飲品。\n• Pancake House HoiHoi (近PARCO)：夏威夷風舒芙蕾鬆餅，親子極度友善。",
+          walkLinks: [
+            { label: '導航至 HARBS 榮本店', url: 'https://www.google.com/maps/dir/?api=1&destination=HARBS+Sakae+Main+Store&travelmode=walking' },
+            { label: '導航至 Pancake House HoiHoi', url: 'https://www.google.com/maps/dir/?api=1&destination=Pancake+House+HoiHoi+Sakae&travelmode=walking' }
+          ]
+        },
+        { 
+          time: "順路", 
+          event: "⚡ 購物加碼：名古屋 PARCO", 
+          desc: "【東館 2F】寶可夢中心。\n【西館 6F】動漫與玩具店、Capsule Laboratory 超大扭蛋機專區、麥帽商店。\n💡 可以跟小朋友約定：乖乖逛完 LoFt 就能去扭蛋區挑禮物！",
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Nagoya+PARCO&travelmode=walking",
+          walkLabel: "導航至 名古屋 PARCO"
+        },
+        { 
+          time: "晚上", 
+          event: "🏠 晚餐與返回民宿", 
+          desc: "晚餐可於 PARCO 或榮商圈附近隨意享用，結束豐富的榮商圈一日遊，搭車回民宿。",
+          transport: "【地下鐵-東山線(黃線)】\n榮 或 矢場町 ➔ 池下 \n🎫 ¥210",
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking",
+          walkLabel: "導航至 民宿 (第47プロスパ)"
         }
       ]
     },
@@ -146,21 +166,24 @@ const App = () => {
           desc: "營業時間：10:00 - 17:00",
           transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 名古屋 (往高畑方向 / 6 站 / 12分)\n🎫 ¥270\n【地下鐵-青波線(藍線)】\n名古屋 ➔ 金城埠頭 (往金城埠頭 / 10 站 / 24分)\n🎫 ¥360\n出口：終點站出站即達。",
           tickets: "大人約 ¥7,100 / 兒童 ¥4,600\n(可於KLOOK/KKDAY預購)",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=LEGOLAND+Japan+Resort&travelmode=walking"
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=LEGOLAND+Japan+Resort&travelmode=walking",
+          walkLabel: "導航至 樂高樂園"
         },
         { 
           time: "17:30", 
           event: "🍕 Maker's Pier 晚餐", 
           desc: "樂園門口餐廳區，多樣化選擇。",
           transport: "步行移動。",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Maker's+Pier&travelmode=walking"
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Maker's+Pier&travelmode=walking",
+          walkLabel: "導航至 Maker's Pier"
         },
         { 
           time: "20:00", 
           event: "🏠 返回民宿", 
           desc: "結束樂高之日。",
           transport: "【地下鐵-青波線(藍線)】\n金城埠頭 ➔ 名古屋 (24分)\n🎫 ¥360\n【地下鐵-東山線(黃線)】\n名古屋 ➔ 池下 (往藤之丘方向 / 12分)\n🎫 ¥270",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking",
+          walkLabel: "導航至 民宿 (第47プロスパ)"
         }
       ]
     },
@@ -196,6 +219,7 @@ const App = () => {
           transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 榮 (往高畑方向 / 4 站 / 7分)\n🎫 ¥210\n【地下鐵-名城線(紫線)】\n榮 ➔ 名古屋港 (往名古屋港方向 / 8 站 / 18分)\n🎫 ¥250\n出口：3 號出口電梯。",
           tickets: "大人 ¥2,030 / 小學生 ¥1,010\n(可於KLOOK/KKDAY預購)",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=Nagoya+Public+Aquarium&travelmode=walking",
+          walkLabel: "導航至 名古屋港水族館",
           extra: "🐬 表演提醒：\n• 海豚表演: 11:00 (北館 3F)\n• 虎鯨訓練: 12:00 (北館 3F)"
         },
         { 
@@ -203,14 +227,16 @@ const App = () => {
           event: "🏮 大須商店街", 
           desc: "炸蝦三明治 (Konparu) 與藥妝購物。",
           transport: "【地下鐵-名城線(紫線)】\n名古屋港站 ➔ 上前津站 (往大曾根、大德寺方向 / 9 站 / 18分)\n🎫 ¥270\n出口：9 號出口電梯。",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Osu+Shopping+District&travelmode=walking"
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=Osu+Shopping+District&travelmode=walking",
+          walkLabel: "導航至 大須商店街"
         },      
         { 
           time: "18:30", 
           event: "🍱 晚餐時間", 
           desc: "商店街附近或榮商圈聚餐。",
           transport: "【地下鐵-名城線(紫線)】\n上前津 ➔ 榮 (2 站 / 4分)\n🎫 ¥210\n【地下鐵-東山線(黃線)】\n榮 ➔ 池下 (往藤之丘方向 / 4 站 / 7分)\n🎫 ¥210",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking"
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking",
+          walkLabel: "導航至 民宿 (第47プロスパ)"
         }
       ]
     },
@@ -227,7 +253,8 @@ const App = () => {
           desc: "12 人最後的大團體活動。",
           transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 名古屋 (往高畑方向 / 12分)\n🎫 ¥270\n【地下鐵-青波線(藍線)】\n名古屋 ➔ 金城埠頭 (往金城埠頭 / 10 站 / 24分)\n🎫 ¥360\n出口：出站步行 2 分鐘。",
           tickets: "大人 ¥1,000 / 兒童 ¥500\n(建議官網或現場購票)",
-          walkLink: "https://www.google.com/maps/dir/?api=1&destination=SCMAGLEV+and+Railway+Park&travelmode=walking"
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=SCMAGLEV+and+Railway+Park&travelmode=walking",
+          walkLabel: "導航至 磁浮鐵道館"
         },
         { 
           time: "13:45", 
@@ -324,10 +351,12 @@ const App = () => {
                   
                   {/* Detailed Box - Darker Blue-Grey */}
                   <div className="bg-slate-300 p-4 rounded-2xl border border-slate-300 space-y-3 text-slate-800 shadow-sm">
-                    <div className="flex items-start gap-2 text-[12px]">
-                      <Train size={14} className="flex-shrink-0 mt-0.5 text-indigo-700" />
-                      <span className="whitespace-pre-line leading-snug font-medium text-slate-900">{item.transport}</span>
-                    </div>
+                    {item.transport && (
+                      <div className="flex items-start gap-2 text-[12px]">
+                        <Train size={14} className="flex-shrink-0 mt-0.5 text-indigo-700" />
+                        <span className="whitespace-pre-line leading-snug font-medium text-slate-900">{item.transport}</span>
+                      </div>
+                    )}
                     
                     {(item.tickets || item.ticketsInfo) && (
                       <div className="flex items-start gap-2 text-[12px] font-bold text-emerald-800 pt-2 border-t border-slate-400/30">
@@ -356,11 +385,11 @@ const App = () => {
                         className="flex items-center justify-center gap-2 w-full bg-indigo-600 hover:bg-indigo-700 text-white py-3 rounded-xl text-xs font-bold transition-all shadow-md active:scale-95"
                       >
                         {item.event.includes('計程車') ? <Car size={14} /> : <Navigation size={14} />} 
-                        {item.event.includes('計程車') ? '開啟路線參考 (Google Maps)' : '開啟步行導航 (Google Maps)'}
+                        {item.walkLabel || (item.event.includes('計程車') ? '開啟路線參考 (Google Maps)' : '開啟步行導航 (Google Maps)')}
                       </a>
                     )}
 
-                    {/* 情況 B：有多個連結時的渲染（專屬名古屋城這類行程） */}
+                    {/* 情況 B：有多個連結時的渲染 */}
                     {item.walkLinks && (
                       <div className="space-y-2 w-full">
                         {item.walkLinks.map((link, linkIndex) => (
@@ -425,7 +454,7 @@ const App = () => {
             <Store size={12} /> 超市：MaxValu, 成城石井
           </div>
           <div className="flex items-center gap-1 text-orange-500">
-            <Utensils size={12} /> 必吃：炸蝦三明治, 鰻魚飯
+            <Utensils size={12} /> 必吃：炸蝦三明治, 飛驒牛
           </div>
         </div>
 

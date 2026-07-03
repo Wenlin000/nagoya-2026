@@ -49,14 +49,14 @@ const App = () => {
           desc: "B 組預計 15:35 抵達，直接前往民宿會合。",
           transport: "【地下鐵-東山線(黃線)】\n名古屋站 ➔ 池下站 (往藤之丘方向)\n經過 6 站 / 約 12 分鐘\n票價：\n🎫 ¥250",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking",
-          walkLabel: "導航至 民宿 (第47プロスパ)"
+          walkLabel: "導航至 民宿"
         },
         { 
           event: "🏘️ 前往民宿辦理入住", 
           desc: "『第47プロスパ』放行李休息。",
           transport: "【轉乘指引：名鐵 ➔ 地鐵】\n名鐵名古屋站下車後走中央改札口，搭電梯至 B1 依照黃色 M 指標前往地鐵東山線中改札口。\n\n【地下鐵-東山線(黃線)】\n名古屋站 ➔ 池下站 (往藤之丘方向 / 6 站 / 12 分)\n\n票價：\n🎫 ¥250",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking",
-          walkLabel: "導航至 民宿 (第47プロスパ)"
+          walkLabel: "導航至 民宿"
         },
         { 
           time: "18:00", 
@@ -149,7 +149,7 @@ const App = () => {
           desc: "晚餐可於 PARCO 或榮商圈附近隨意享用，結束豐富的榮商圈一日遊，搭車回民宿。",
           transport: "【地下鐵-東山線(黃線)】\n榮 或 矢場町 ➔ 池下 \n🎫 ¥210",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking",
-          walkLabel: "導航至 民宿 (第47プロスパ)"
+          walkLabel: "導航至 民宿"
         }
       ]
     },
@@ -183,7 +183,7 @@ const App = () => {
           desc: "結束樂高之日。",
           transport: "【地下鐵-青波線(藍線)】\n金城埠頭 ➔ 名古屋 (24分)\n🎫 ¥360\n【地下鐵-東山線(黃線)】\n名古屋 ➔ 池下 (往藤之丘方向 / 12分)\n🎫 ¥270",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking",
-          walkLabel: "導航至 民宿 (第47プロスパ)"
+          walkLabel: "導航至 民宿"
         }
       ]
     },
@@ -236,7 +236,7 @@ const App = () => {
           desc: "商店街附近或榮商圈聚餐。",
           transport: "【地下鐵-名城線(紫線)】\n上前津 ➔ 榮 (2 站 / 4分)\n🎫 ¥210\n【地下鐵-東山線(黃線)】\n榮 ➔ 池下 (往藤之丘方向 / 4 站 / 7分)\n🎫 ¥210",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=第47プロスパ&travelmode=walking",
-          walkLabel: "導航至 民宿 (第47プロスパ)"
+          walkLabel: "導航至 民宿"
         }
       ]
     },

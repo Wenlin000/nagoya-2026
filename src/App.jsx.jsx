@@ -245,13 +245,21 @@ const App = () => {
       date: "7/12 (日)",
       title: "7/12 賦歸 ✈️ 三梯次離境",
       icon: <ShoppingBag className="text-pink-500" size={20} />,
-      dailyAlert: "今日三梯次離境時間不同，請務必記好自己的「機場報到時間」。行李可先寄放在名古屋車站。",
+      dailyAlert: "今日三梯次離境時間不同，請務必記好自己的「機場報到時間」。行李先集中寄放在名古屋車站高島屋。",
       schedule: [
+        { 
+          time: "09:30", 
+          event: "🧳 高島屋行李寄存中心", 
+          desc: "營業時間：10:00 - 20:00（請注意必須在閉店前取回行李）。\n收費方式：每件一律 ¥1,100。\n💡 優惠：當日在百貨或門塔商城消費滿 ¥3,000 (含稅)，享前 5 小時免費寄放！",
+          transport: "【推大型行李轉乘與無障礙動線】\n1. 池下站搭乘電梯進站 ➔ 搭乘東山線至名古屋站 (🎫 ¥270)。\n2. 名古屋站下車後，尋找黃色標誌的電梯上樓，往「櫻通口 (Sakura-dori Exit)」或「JR 塔樓 (JR Central Towers)」方向前進。\n3. 高島屋就在櫻通口旁，全棟皆有大型電梯可直達寄存處。",
+          walkLink: "https://www.google.com/maps/dir/?api=1&destination=JR+Nagoya+Takashimaya&travelmode=walking",
+          walkLabel: "導航至 名古屋高島屋"
+        },
         { 
           time: "10:30", 
           event: "🚄 磁浮鐵道館", 
           desc: "12 人最後的大團體活動。",
-          transport: "【地下鐵-東山線(黃線)】\n池下 ➔ 名古屋 (往高畑方向 / 12分)\n🎫 ¥270\n【地下鐵-青波線(藍線)】\n名古屋 ➔ 金城埠頭 (往金城埠頭 / 10 站 / 24分)\n🎫 ¥360\n出口：出站步行 2 分鐘。",
+          transport: "【地下鐵-青波線(藍線)】\n從高島屋步行至青波線名古屋站 ➔ 金城埠頭 (往金城埠頭 / 10 站 / 24分)\n🎫 ¥360\n出口：金城埠頭站出站有無障礙電梯，步行 2 分鐘即達。",
           tickets: "大人 ¥1,000 / 兒童 ¥500\n(建議官網或現場購票)",
           walkLink: "https://www.google.com/maps/dir/?api=1&destination=SCMAGLEV+and+Railway+Park&travelmode=walking",
           walkLabel: "導航至 磁浮鐵道館"
@@ -437,7 +445,7 @@ const App = () => {
               {/* Accommodation Box */}
               <div className="bg-indigo-50 rounded-2xl p-4 border border-indigo-100">
                 <div className="flex items-center gap-2 text-indigo-800 font-black text-sm mb-2">
-                  <Home size={16} /> 住宿資訊
+                  <Home size={16} /> 住宿資訊 8249+
                 </div>
                 <div className="text-[11px] leading-relaxed text-indigo-900">
                   <span className="font-bold block text-sm mb-1">{links.stayName}</span>
